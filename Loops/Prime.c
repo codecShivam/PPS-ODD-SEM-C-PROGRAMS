@@ -3,7 +3,7 @@
 int main()
 {
   int i, n, c = 0, j;
-  printf("Enter number");
+  printf("Enter number upto which you want to find prime number:\n");
   scanf("%d", &n);
   for (i = 1; i <= n; i++)
   {

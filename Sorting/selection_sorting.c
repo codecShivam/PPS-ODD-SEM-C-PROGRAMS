@@ -20,7 +20,7 @@ int main()
                 min = j;
             }
         }
-        if (min != j)
+        if (min != i)
         {
             temp = a[i];
             a[i] = a[min];

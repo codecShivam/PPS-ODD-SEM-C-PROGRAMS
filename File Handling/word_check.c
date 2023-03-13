@@ -21,7 +21,7 @@ void main(){
             count++;
            }
         } 
-        printf("Yes! the word '%s' exists in file.",word);00
+        printf("Yes! the word '%s' exists in file.",word);
         printf("Number of occurence of given word is %d",count);
         fclose(fp);
     }
