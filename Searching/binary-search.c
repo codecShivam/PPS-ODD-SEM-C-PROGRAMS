@@ -20,7 +20,7 @@ void main(){
     l=0;
     r=n-1;
     while(l<=r){
-        mid=l+r/2;
+        mid=(l+r)/2;
         if(data<a[mid]){
             r=mid-1;
         }
@@ -30,7 +30,7 @@ void main(){
         }
         else{
             l=mid+1;
-            mid=l+r/2;
+            mid=(l+r)/2;
         }
     }
     if(l>r){

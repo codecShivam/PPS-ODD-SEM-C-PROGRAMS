@@ -1,37 +1,51 @@
-#include <stdio.h>8/
-#include<string.h>
+// #include <stdio.h>
+// #include<string.h>
 
-void main()
+// void main()
+// {
+//     FILE *fp, *fq;
+//     char fname1[100], fname2[100], ch[100];
+//     printf("Enter first file path:\n");
+//     scanf("%s", fname1);
+//     fp = fopen(fname1, "r");
+//     if (fp == NULL)
+//     {
+//         printf("Error: Unable to open the first file:\n");
+//     }
+//     printf("Enter second file path:\n");
+//     scanf("%s", fname2);
+//     fq = fopen(fname2, "r");
+//     if (fq == NULL)
+//     {
+//         printf("Error: Unable to open the second file:\n");
+//     }
+//     while ((! feof (fp)) && (! feof (fq)))
+//     {
+//         fscanf(fp, "%s", fname1);
+//         fscanf(fq, "%s", fname2);
+//         if (strcmp(fname1, fname2) != 0)
+//         {
+//             printf("The content of files are not same.");
+//         }
+//         else
+//         {
+//             printf("The content of the files are same");
+//         }
+//     }
+//     fclose(fp);
+//     fclose(fq);
+// }
+#include<stdio.h>
+#include<math.h>
+int main()
 {
-    FILE *fp, *fq;
-    char fname1[100], fname2[100], ch[100];
-    printf("Enter first file path:\n");
-    scanf("%s", ch);
-    fp = fopen(ch, "r");
-    if (fp == NULL)
+    int i,j;
+    for(i=5;i>=2;i--)
     {
-        printf("Error: Unable to open the first file:\n");
-    }
-    printf("Enter second file path:\n");
-    scanf("%s", ch);
-    fq = fopen(ch, "r");
-    if (fq == NULL)
-    {
-        printf("Error: Unable to open the second file:\n");
-    }
-    while ((! feof (fp)) && (! feof (fq)))
-    {
-        fscanf(fp, "%s", fname1);
-        fscanf(fq, "%s", fname2);
-        if (strcmp(fname1, fname2) != 0)
+        for(j=1;j>=i;j++)
         {
-            printf("The content of files are not same.");
+            printf("*");
         }
-        else
-        {
-            printf("The content of the files are same");
-        }
+        printf("\n");
     }
-    fclose(fp);
-    fclose(fq);
 }
